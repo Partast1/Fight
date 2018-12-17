@@ -1,17 +1,19 @@
-﻿using System;
+﻿using Fight.Weapons;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Fight
-{
+{   
     class Program
     {
         static void Main(string[] args)
         {
             CreateWeapon cw = new CreateWeapon();
             CreateCreature cc = new CreateCreature();
+         
 
 
             List<Creature> creatures = cc.NewCreature();
@@ -54,6 +56,10 @@ namespace Fight
             foreach (Weapon item in playerInventory)
             {
                 Console.WriteLine("{0}",item.Wname);
+            }
+            foreach (Sword item in weapons)
+            {
+                Console.WriteLine("{0}{1}{2}{3}{4}", item.Wname, item.Mindmg, item.Maxdmg, item.Crit, item.Doublehit);
             }
 
             Console.ReadLine();

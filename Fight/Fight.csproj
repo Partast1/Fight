@@ -48,6 +48,7 @@
     <Compile Include="CreateWeapon.cs" />
     <Compile Include="Creature.cs" />
     <Compile Include="Creatures\Orc.cs" />
+    <Compile Include="Creatures\Player\PlayerInventory.cs" />
     <Compile Include="TurnOptions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
